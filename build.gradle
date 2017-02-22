@@ -1,0 +1,23 @@
+subprojects { project ->
+    group = GROUP
+    version = VERSION_NAME
+
+    repositories {
+        jcenter()
+        mavenCentral()
+    }
+
+    buildscript {
+        repositories {
+            jcenter()
+            mavenCentral()
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:2.2.3'
+        }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
