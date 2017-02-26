@@ -1,6 +1,6 @@
 apply plugin: 'java'
 
-archivesBaseName = ARTIFACT + '-compiler'
+archivesBaseName = POM_ARTIFACT_ID
 group GROUP
 version VERSION_NAME
 
